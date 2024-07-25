@@ -25,3 +25,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/meja', [MejaController::class, 'index']);
+Route::get('/meja/form/', [MejaController::class, 'create']);
+Route::post('/meja/store/', [MejaController::class, 'store']);

@@ -22,7 +22,7 @@ class MejaController extends Controller
      */
     public function create()
     {
-        return view('meja.index');
+        return view('meja.form');
     }
 
     /**
@@ -30,7 +30,12 @@ class MejaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $meja = new Meja;
+        $meja->kd_meja = $request->kd_meja;
+        $meja->posisi = $request->posisi;
+        $meja->save();
+
+        return redirect('/meja');
     }
 
     /**
