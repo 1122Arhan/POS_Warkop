@@ -72,6 +72,8 @@ class MejaController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $meja = Meja::find($id);
+        $meja->delete();
+        return redirect('/meja/');
     }
 }

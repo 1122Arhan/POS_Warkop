@@ -30,3 +30,4 @@ Route::get('/meja/form/', [MejaController::class, 'create']);
 Route::post('/meja/store/', [MejaController::class, 'store']);
 Route::get('/meja/edit/{id}', [MejaController::class, 'edit']);
 Route::put('/meja/{id}', [MejaController::class, 'update']);
+Route::delete('/meja/{id}', [MejaController::class, 'destroy']);
