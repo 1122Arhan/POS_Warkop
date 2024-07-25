@@ -43,7 +43,7 @@
                         <td>{{$item->kd_meja}}</td>
                         <td>{{$item->posisi}}</td>
                         <td>
-                            <a href="/jurusan/edit/{{$item->id}}" class="btn btn-info btn-sm"><i class="fa fa-pencil-alt"></i></a>
+                            <a href="/meja/edit/{{$item->id}}" class="btn btn-info btn-sm"><i class="fa fa-pencil-alt"></i></a>
 
                             <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#hapus{{$item->id}}">
                                 <i class="fa fa-trash"></i>

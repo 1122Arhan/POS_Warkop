@@ -1,12 +1,12 @@
 @extends('layouts.master')
-@section('title','Tambah Jurusan')
-@section('heading','Tambah Jurusan')
+@section('title','Tambah Meja')
+@section('heading','Tambah Meja')
 
 @section('bc')
     <div class="col-sm-6">
         <ol class="breadcrumb float-sm-right">
         <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item active"Tambah Jurusan</li>
+        <li class="breadcrumb-item active"Tambah Meja</li>
         </ol>
     </div>
 @endsection

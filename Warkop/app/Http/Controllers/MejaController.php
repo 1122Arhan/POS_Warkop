@@ -51,7 +51,8 @@ class MejaController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $meja = Meja::find($id);
+        return view('meja.edit', compact('meja'));
     }
 
     /**
@@ -59,7 +60,11 @@ class MejaController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $meja = Meja::find($id);
+        $meja->kd_meja = $request->kd_meja;
+        $meja->posisi = $request->posisi;
+        $meja->save();
+        return redirect('/meja/');
     }
 
     /**
