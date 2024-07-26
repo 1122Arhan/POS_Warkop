@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MejaController;
+use App\Http\Controllers\StandController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -31,3 +32,7 @@ Route::post('/meja/store/', [MejaController::class, 'store']);
 Route::get('/meja/edit/{id}', [MejaController::class, 'edit']);
 Route::put('/meja/{id}', [MejaController::class, 'update']);
 Route::delete('/meja/{id}', [MejaController::class, 'destroy']);
+
+Route::get('/stand', [StandController::class, 'index']);
+Route::get('/stand/form/', [StandController::class, 'create']);
+Route::post('/stand/store', [StandController::class, 'store']);

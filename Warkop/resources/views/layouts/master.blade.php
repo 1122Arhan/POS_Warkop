@@ -218,6 +218,14 @@
                             </p>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="/stand" class="nav-link">
+                            <i class="nav-icon fas fa-building"></i>
+                            <p>
+                            Stand
+                            </p>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <!-- /.sidebar-menu -->
