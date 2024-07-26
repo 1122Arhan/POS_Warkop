@@ -196,23 +196,15 @@
                     </li>
                     <li class="nav-item">
                         <a href="/menu/" class="nav-link">
-                            <i class="nav-icon fas fa-users"></i>
+                            <i class="nav-icon fas fa-book"></i>
                             <p>
                                 Menu
                             </p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/kategori/" class="nav-link">
-                            <i class="nav-icon fas fa-building"></i>
-                            <p>
-                            Kategori
-                            </p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
                         <a href="/meja" class="nav-link">
-                            <i class="nav-icon fas fa-building"></i>
+                            <i class="nav-icon fas fa-chair"></i>
                             <p>
                             Meja
                             </p>
