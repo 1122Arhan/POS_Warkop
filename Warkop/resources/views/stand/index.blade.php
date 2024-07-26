@@ -59,7 +59,7 @@
                                     <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        Yakin Data Meja {{$item->stand}} di Hapus?
+                                        Yakin Data stand {{$item->stand}} di Hapus?
                                     </div>
                                     <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
