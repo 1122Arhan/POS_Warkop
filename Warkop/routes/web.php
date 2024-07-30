@@ -46,3 +46,5 @@ Route::delete('/stand/{id}', [StandController::class, 'destroy']);
 Route::get('/menu', [MenuController::class, 'index']);
 Route::get('/menu/form/', [MenuController::class, 'create']);
 Route::post('/menu/store/', [MenuController::class, 'store']);
+Route::get('/menu/edit/{id}', [MenuController::class, 'edit']);
+Route::put('/menu/{id}', [MenuController::class, 'update']);

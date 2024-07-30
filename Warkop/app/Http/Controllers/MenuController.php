@@ -49,7 +49,9 @@ class MenuController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $mn = Menu::find($id);
+        $std = Stand::all();
+        return view('menu.edit', compact('mn', 'std'));
     }
 
     /**
@@ -57,7 +59,15 @@ class MenuController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $mn = Menu::find($id);
+        $mn->kd_menu = $request->kd_menu;
+        $mn->nama_menu = $request->nama_menu;
+        $mn->harga = $request->harga;
+        $mn->stands_id = $request->stand;
+        $mn->kategori = $request->kategori;
+        $mn->save();
+
+        return redirect('/menu/');
     }
 
     /**
