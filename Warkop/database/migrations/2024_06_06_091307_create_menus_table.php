@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('nama_menu', 50);
             $table->double('harga', 100);
             $table->bigInteger('stans_id');
-            $table->bigInteger('kategoris_id');
+            $table->bigInteger('kategori');
             $table->timestamps();
         });
     }

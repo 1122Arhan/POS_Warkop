@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\MejaController;
+use App\Http\Controllers\MenuController;
 use App\Http\Controllers\StandController;
+use App\Models\Menu;
 use App\Models\Stand;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -40,3 +42,7 @@ Route::post('/stand/store', [StandController::class, 'store']);
 Route::get('/stand/edit/{id}', [StandController::class, 'edit']);
 Route::put('/stand/{id}', [StandController::class, 'update']);
 Route::delete('/stand/{id}', [StandController::class, 'destroy']);
+
+Route::get('/menu', [MenuController::class, 'index']);
+Route::get('/menu/form/', [MenuController::class, 'create']);
+Route::post('/menu/store/', [MenuController::class, 'store']);
