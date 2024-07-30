@@ -48,3 +48,4 @@ Route::get('/menu/form/', [MenuController::class, 'create']);
 Route::post('/menu/store/', [MenuController::class, 'store']);
 Route::get('/menu/edit/{id}', [MenuController::class, 'edit']);
 Route::put('/menu/{id}', [MenuController::class, 'update']);
+Route::delete('/menu/{id}', [MenuController::class, 'destroy']);
