@@ -58,11 +58,11 @@
                                     <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        Yakin Data stand {{$item->menu}} di Hapus?
+                                        Yakin Data Kategori {{$item->nama_ktg}} di Hapus?
                                     </div>
                                     <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                                    <form action="/menu/{{$item->id}}" method="post">
+                                    <form action="/kategori/{{$item->id}}" method="post">
                                         @method('DELETE')
                                         @csrf
                                         <button type="submit" class="btn btn-primary">Hapus</button>
