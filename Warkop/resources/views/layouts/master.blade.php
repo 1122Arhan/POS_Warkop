@@ -218,6 +218,22 @@
                             </p>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="/kategori" class="nav-link">
+                            <i class="nav-icon fas fa-list"></i>
+                            <p>
+                            Kategori Menu
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/petugas" class="nav-link">
+                            <i class="nav-icon fas fa-users"></i>
+                            <p>
+                            Petugas
+                            </p>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <!-- /.sidebar-menu -->

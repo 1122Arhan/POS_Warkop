@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Kategori;
 use App\Models\Menu;
 use App\Models\Stand;
 use Illuminate\Http\Request;
@@ -37,7 +38,7 @@ class MenuController extends Controller
         $mn->nama_menu = $request->nama_menu;
         $mn->harga = $request->harga;
         $mn->stands_id = $request->stand;
-        $mn->kategori = $request->kategori;
+        $mn->kategoris_id = $request->kategori;
         $mn->save();
 
         return redirect('/menu/');
@@ -50,6 +51,7 @@ class MenuController extends Controller
     {
         $mn = Menu::find($id);
         $std = Stand::all();
+        $ktg = Kategori::all();
         return view('menu.edit', compact('mn', 'std'));
     }
 
@@ -63,7 +65,7 @@ class MenuController extends Controller
         $mn->nama_menu = $request->nama_menu;
         $mn->harga = $request->harga;
         $mn->stands_id = $request->stand;
-        $mn->kategori = $request->kategori;
+        $mn->kategoris_id = $request->kategori;
         $mn->save();
 
         return redirect('/menu/');

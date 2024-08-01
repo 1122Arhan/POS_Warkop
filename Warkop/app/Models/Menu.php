@@ -12,7 +12,11 @@ class Menu extends Model
 
     public function stands(): HasOne
     {
-
         return $this->hasOne(Stand::class, 'id', 'stands_id');
+    }
+
+    public function kategoris(): HasOne
+    {
+        return $this->hasOne(Kategori::class, 'id', 'kategoris_id');
     }
 }
