@@ -25,7 +25,8 @@ class MenuController extends Controller
     public function create()
     {
         $std = Stand::all();
-        return view('menu.form', compact('std'));
+        $ktg = Kategori::all();
+        return view('menu.form', compact('std', 'ktg'));
     }
 
     /**
@@ -52,7 +53,7 @@ class MenuController extends Controller
         $mn = Menu::find($id);
         $std = Stand::all();
         $ktg = Kategori::all();
-        return view('menu.edit', compact('mn', 'std'));
+        return view('menu.edit', compact('mn', 'std', 'ktg'));
     }
 
     /**

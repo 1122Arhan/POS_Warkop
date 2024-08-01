@@ -48,7 +48,7 @@
                         <td>{{$item->nama_menu}}</td>
                         <td>{{$item->harga}}</td>
                         <td>{{$item->stands->stand}}</td>
-                        <td>{{$item->kategori}}</td>
+                        <td>{{$item->kategoris->nama_ktg}}</td>
                         <td>
                             <a href="/menu/edit/{{$item->id}}" class="btn btn-info btn-sm"><i class="fa fa-pencil-alt"></i></a>
 
@@ -64,7 +64,7 @@
                                     <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        Yakin Data stand {{$item->menu}} di Hapus?
+                                        Yakin Data Menu {{$item->nama_menu}} di Hapus?
                                     </div>
                                     <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>

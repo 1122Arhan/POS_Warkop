@@ -55,9 +55,10 @@
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Kategori</label>
                             <select name="kategori" class="form-control" id="">
-                                <option value="">-Pilih Kategori -</option>
-                                <option value="Makanan">Makanan</option>
-                                <option value="Minuman">Minum</option>
+                                <option value="">-Pilih Kategori-</option>
+                                @foreach ($ktg as $item2)
+                                    <option value="{{$item2->id}}">{{$item2->nama_ktg}}</option>
+                                @endforeach
                             </select>
                         </div>
 

@@ -56,8 +56,10 @@
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Kategori</label>
                     <select name="kategori" class="form-control" id="">
-                        <option value="Makanan" {{ $mn->kategori == 'Makanan' ? 'selected' : '' }}>Makanan</option>
-                        <option value="Minuman" {{ $mn->kategori == 'Minuman' ? 'selected' : '' }}>Minuman</option>
+                       <option hidden value="{{$mn->kategoris_id}}">{{$mn->kategoris->nama_ktg}}</option>
+                        @foreach ($ktg as $item2)
+                            <option value="{{$item2->id}}">{{$item2->nama_ktg}}</option>
+                        @endforeach
                     </select>
                 </div>
 
