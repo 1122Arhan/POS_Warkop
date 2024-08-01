@@ -11,13 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('petugass', function (Blueprint $table) {
+        Schema::create('kategoris', function (Blueprint $table) {
             $table->id();
-            $table->string('kd_ptg', 40)->unique();
-            $table->string('nama_ptg', 255);
-            $table->string('alamat', 255);
-            $table->string('telp', 255);
-            $table->string('password', 255);
+            $table->string('nama_ktg', 255);
+            $table->string('jenis_ktg', 255);
             $table->timestamps();
         });
     }

@@ -47,7 +47,7 @@
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Stand</label>
                     <select name="stand" class="form-control" id="">
-                        <option hidden value="{{$mn->stands_id}}">{{$mn->stands_id}}</option>
+                        <option hidden value="{{$mn->stands_id}}">{{$mn->stands->stand}}</option>
                         @foreach ($std as $item)
                             <option value="{{$item->id}}">{{$item->stand}}</option>
                         @endforeach
