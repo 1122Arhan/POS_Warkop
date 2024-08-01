@@ -13,6 +13,6 @@ class Menu extends Model
     public function stands(): HasOne
     {
 
-        return $this->hasOne(Stand::class, 'id', 'stand_id');
+        return $this->hasOne(Stand::class, 'id', 'stands_id');
     }
 }

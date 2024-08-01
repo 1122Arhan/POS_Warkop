@@ -15,7 +15,6 @@ class MenuController extends Controller
     {
         $no = 1;
         $mn = Menu::all();
-
         return view('menu.index', compact('no', 'mn'));
     }
 

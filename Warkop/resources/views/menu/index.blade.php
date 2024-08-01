@@ -47,7 +47,7 @@
                         <td>{{$item->kd_menu}}</td>
                         <td>{{$item->nama_menu}}</td>
                         <td>{{$item->harga}}</td>
-                        <td>{{$item->stands_id}}</td>
+                        <td>{{$item->stands->stand}}</td>
                         <td>{{$item->kategori}}</td>
                         <td>
                             <a href="/menu/edit/{{$item->id}}" class="btn btn-info btn-sm"><i class="fa fa-pencil-alt"></i></a>
