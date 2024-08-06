@@ -4,6 +4,7 @@ use App\Http\Controllers\MejaController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\StandController;
 use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\PetugasController;
 use App\Models\Kategori;
 use App\Models\Menu;
 use App\Models\Stand;
@@ -58,3 +59,7 @@ Route::post('/kategori/store/', [KategoriController::class, 'store']);
 Route::get('/kategori/edit/{id}', [KategoriController::class, 'edit']);
 Route::put('/kategori/{id}', [KategoriController::class, 'update']);
 Route::delete('/kategori/{id}', [KategoriController::class, 'destroy']);
+
+Route::get('/petugas', [PetugasController::class, 'index']);
+Route::get('/petugas/form', [PetugasController::class, 'create']);
+Route::post('/petugas/store', [PetugasController::class, 'store']);
