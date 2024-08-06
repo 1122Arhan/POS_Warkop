@@ -61,11 +61,11 @@
                                     <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        Yakin Data Meja {{$item->kd_meja}} di Hapus?
+                                        Yakin Data Waiters {{$item->nama_ptg}} di Hapus?
                                     </div>
                                     <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                                    <form action="/meja/{{$item->id}}" method="post">
+                                    <form action="/petugas/{{$item->id}}" method="post">
                                         @method('DELETE')
                                         @csrf
                                         <button type="submit" class="btn btn-primary">Hapus</button>
