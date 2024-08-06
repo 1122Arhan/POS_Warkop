@@ -63,3 +63,5 @@ Route::delete('/kategori/{id}', [KategoriController::class, 'destroy']);
 Route::get('/petugas', [PetugasController::class, 'index']);
 Route::get('/petugas/form', [PetugasController::class, 'create']);
 Route::post('/petugas/store', [PetugasController::class, 'store']);
+Route::get('/petugas/edit/{id}', [PetugasController::class, 'edit']);
+Route::put('/petugas/{id}', [PetugasController::class, 'update']);

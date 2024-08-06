@@ -38,7 +38,7 @@ class PetugasController extends Controller
         $ptg->password = $request->password;
         $ptg->save();
 
-        return redirect('/petugas');
+        return redirect('/petugas/');
     }
 
     /**
@@ -54,7 +54,8 @@ class PetugasController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $ptg = Petugas::find($id);
+        return view('petugas.edit', compact('ptg'));
     }
 
     /**
@@ -62,7 +63,13 @@ class PetugasController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $ptg = Petugas::find($id);
+        $ptg->kode_ptg = $request->kode_ptg;
+        $ptg->nama_ptg = $request->nama_ptg;
+        $ptg->alamat   = $request->alamat;
+        $ptg->telp     = $request->telp;
+        $ptg->save();
+        return redirect('/petugas/');
     }
 
     /**
@@ -70,6 +77,5 @@ class PetugasController extends Controller
      */
     public function destroy(string $id)
     {
-        //
     }
 }
